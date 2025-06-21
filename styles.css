@@ -1,16 +1,25 @@
-#grid > div:nth-child(1) {
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 242.5px);
+  grid-template-rows: repeat(5, 124px);
+  grid-gap: 10px 10px; /* or gap: 10px; */
+}
+#grid >div{
+border:2px solid;
+}
+.item1 {
   grid-column: span 4;
 }
 
-#grid > div:nth-child(2) {
+.item2 {
   grid-row: span 4;
 }
 
-#grid > div:nth-child(4),
-#grid > div:nth-child(5) {
+.item4, .item5 {
   grid-column: span 2;
 }
 
-#grid > div:nth-child(10) {
+.item10 {
   grid-column: span 3;
 }
